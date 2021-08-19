@@ -36,7 +36,7 @@ GOLANGCI_LINT := $(BIN_DIR)/golangci-lint
 # -mod=vendor: force go to use the vendor files instead of using the `$GOPATH/pkg/mod`
 # -p: the number of programs that can be run in parallel
 # -count: run each test and benchmark 1 times. Set this flag to disable test cache
-export GOFLAGS ?= -mod=vendor -p=$(CPUS) -count=1
+export GOFLAGS ?= -p=$(CPUS) -count=1
 
 #
 # Define all targets. At least the following commands are required:
